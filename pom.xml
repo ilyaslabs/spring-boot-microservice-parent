@@ -8,12 +8,16 @@
 		<version>3.5.6</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>io.github.ilyaslabs</groupId>
 	<artifactId>spring-boot-microservice-parent</artifactId>
 	<version>${revision}</version>
+
 	<name>microservice-parent</name>
 	<description>Parent project for all the microservices in ilyaslabs domain</description>
+
     <packaging>pom</packaging>
+
     <url>https://ilyaslabs.github.io/</url>
     <licenses>
         <license>
@@ -37,7 +41,7 @@
     </scm>
 
     <properties>
-        <revision>0.0.1-SNAPSHOT</revision> <!-- will be overridden when maven deployed -->
+        <revision>0.1-SNAPSHOT</revision> <!-- will be overridden when maven deployed -->
         <java.version>25</java.version>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
@@ -49,6 +53,8 @@
         <maven-gpg-plugin.version>3.2.3</maven-gpg-plugin.version>
         <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
         <ilyas-spring-boot-microservice-security-jwt.version>2.0.2</ilyas-spring-boot-microservice-security-jwt.version>
+        <ilyas-spring-boot-microservice-test-common.version>1.0.0</ilyas-spring-boot-microservice-test-common.version>
+        <ilyas-spring-boot-microservice-auth-client.version>1.0.0</ilyas-spring-boot-microservice-auth-client.version>
     </properties>
 
     <dependencyManagement>
@@ -69,6 +75,17 @@
                 <groupId>io.github.ilyaslabs</groupId>
                 <artifactId>spring-boot-microservice-security-jwt</artifactId>
                 <version>${ilyas-spring-boot-microservice-security-jwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ilyaslabs</groupId>
+                <artifactId>spring-boot-microservice-auth-client</artifactId>
+                <version>${ilyas-spring-boot-microservice-auth-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ilyaslabs</groupId>
+                <artifactId>spring-boot-microservice-test-common</artifactId>
+                <version>${ilyas-spring-boot-microservice-test-common.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
