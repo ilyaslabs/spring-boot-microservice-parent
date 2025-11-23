@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.6</version>
+		<version>4.0.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -41,7 +41,7 @@
     </scm>
 
     <properties>
-        <revision>0.1-SNAPSHOT</revision> <!-- will be overridden when maven deployed -->
+        <revision>1.0-SNAPSHOT</revision> <!-- will be overridden when maven deployed -->
         <java.version>25</java.version>
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
@@ -52,9 +52,9 @@
         <maven-javadoc-plugin.version>3.7.0</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>3.2.3</maven-gpg-plugin.version>
         <central-publishing-maven-plugin.version>0.8.0</central-publishing-maven-plugin.version>
-        <ilyas-spring-boot-microservice-security-jwt.version>2.0.2</ilyas-spring-boot-microservice-security-jwt.version>
-        <ilyas-spring-boot-microservice-test-common.version>1.0.0</ilyas-spring-boot-microservice-test-common.version>
-        <ilyas-spring-boot-microservice-auth-client.version>1.0.0</ilyas-spring-boot-microservice-auth-client.version>
+        <ilyas-spring-boot-microservice-security-jwt.version>3.0.0</ilyas-spring-boot-microservice-security-jwt.version>
+        <ilyas-spring-boot-microservice-test-common.version>1.0-SNAPSHOT</ilyas-spring-boot-microservice-test-common.version>
+        <ilyas-spring-boot-microservice-auth-client.version>1.0-SNAPSHOT</ilyas-spring-boot-microservice-auth-client.version>
     </properties>
 
     <dependencyManagement>
